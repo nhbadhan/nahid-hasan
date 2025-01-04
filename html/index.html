@@ -11,51 +11,84 @@
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
-      margin: 0%;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
     .content {
       text-align: center;
       padding-top: 50px;
       color: whitesmoke;
       font-size: larger;
-
     }
     .player {
-text-align: center;
-color: aliceblue;
-
+      text-align: center;
+      color: aliceblue;
     }
     .play {
       border: 15px solid red;
       padding: 30px;
-      margin: 30px;
-      border-radius: 0px 35px 0px 35px;
-
-    }
-    #input {
-      /* text-align: center; */
+      margin: 30px auto;
+      border-radius: 0 35px 0 35px;
+      max-width: 600px;
+      text-align: left;
+      color: white;
     }
     .form {
       text-align: center;
-  
+      margin-top: 4px;
+    }
+    .form table {
+      margin: 0 auto;
+    }
+    .form input {
+      padding: 5px;
+      margin: 4px;
+    }
+    .form button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .form button:hover {
+      background-color: #5fb300;
     }
   </style>
 </head>
 <body>
-<div class="content">
-  <h1>Wellcome To My Travel Blog</h1>
-</div>
-<div class="player"><h2>Today I'm Going To Cox's bazar</h2>
-</div>
-<div class="play"><h3>Lorem ipsum dolor <em style="border: 5px solid orangered;">s it amet </em> consectetur <a href="chatgpt.com/c/67795f84-f29c-800f-9b15-db5f5a684d93">Chat gpt</a>styleadipisicing elit. Sunt libero, ex voluptate tempore officiis consectetur ,<span style="color: blue;">sequi reiciendis </span> ut numquam <button a href="chatgpt.com/c/67795f84-f29c-800f-9b15-db5f5a684d93"> nobis </button>velit error corporis suscipit accusantium ea repellat eos  saepe explicabo. <a href="https://chatgpt.com/c/67795f84-f29c-800f-9b15-db5f5a684d93"> <button>Lren more buttonh3</button></a></h3></div>
-<div class="form">
-<h1>Sign in form</h1>
-<form action="">
-  <tr><td>First Name</td><td><input type="text" name="" placeholder="Your Name Here" id=""></td>
-  </tr><br>
-  <tr><td>Set Email</td><td><input type="email" name="" placeholder="Your Gmail Here"></td></tr>
-
-</form>
-</div>
+  <div class="content">
+    <h1>Welcome To My Travel Blog</h1>
+  </div>
+  <div class="player">
+    <h2>Today I'm Going To Cox's Bazar</h2>
+  </div>
+  <div class="play">
+    <h3>
+      Lorem ipsum dolor 
+      <em style="border: 5px solid orangered;">sit amet</em> consectetur 
+      <a href="https://chatgpt.com/c/67795f84-f29c-800f-9b15-db5f5a684d93" style="color: lightblue;">ChatGPT</a> adipisicing elit. Sunt libero, ex voluptate tempore officiis consectetur, 
+      <span style="color: blue;">sequi reiciendis</span> ut numquam velit error corporis suscipit accusantium ea repellat eos saepe explicabo.
+      <a href="https://chatgpt.com/c/67795f84-f29c-800f-9b15-db5f5a684d93" style="text-decoration: none;">
+        <button>Learn More</button>
+      </a>
+    </h3>
+  </div>
+  <div class="form">
+    <h1>Sign In Form</h1>
+    <form>
+      <table>
+        <tr>
+          <td><label for="firstName">First Name:</label></td>
+          <td><input type="text" name="firstName" id="firstName" placeholder="Your Name Here"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" name="email" id="email" placeholder="Your Email Here"></td>
+        </tr>
+      </table>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
